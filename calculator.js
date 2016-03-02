@@ -35,7 +35,7 @@ function isValidOperator(operator) {
 function printOutput(msg) {
   outputCanvas = document.getElementById('calculator-output');
 
-  outputCanvas.innerText = msg;
+  outputCanvas.innerHTML = msg;
 }
 
 function printResult(firstNumber, secondNumber, operator) {
@@ -49,5 +49,5 @@ function printResult(firstNumber, secondNumber, operator) {
     var answer = firstNumber / secondNumber;
   }
 
-  printOutput(answer);
+  printOutput('Answer: <br><br>' + answer);
 }
